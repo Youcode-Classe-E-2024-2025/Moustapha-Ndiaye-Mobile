@@ -1,0 +1,41 @@
+html,body {
+    height: 100%;
+    background: linear-gradient(180deg, #191970, #431F4B);
+    margin: 0;
+    background-attachment: fixed;
+
+}
+
+
+nav a {
+    white-space: nowrap;
+}
+
+nav{
+    background-color: black;
+    padding: 25px;
+    width: auto;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20%;
+    margin-left: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    color: orange;
+}
