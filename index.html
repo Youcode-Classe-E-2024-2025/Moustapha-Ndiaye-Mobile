@@ -2,103 +2,81 @@
 <html lang="en">
 
 <head>
+    <!-- Le titre de la page qui s'affiche sur l'onglet du navigateur -->
+    <title>Tesla model Pi</title>
+    <!-- Cette balise prevois que les caracteres soient bien affiche -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- Cette assure la responsivite et l'adaptaion pour tout les dispositif-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cette balise indique le chemin du fichier CSS pour le style de notre page -->
     <link rel="stylesheet" href="style/style.css">
-    <!-- font-awesome biblio -->
+    <!-- Cette balise utilise les fonts de googles pour le style du caractere -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Cette balise nous permet d'utiliser font Awesome pour les icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#recherche"><i class="fas fa-search"></i></a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="Services">Services</a></li>
-                    <li><a href="#About">About <span>Tesla</span></a></li>
-                    <li><a href="#profil"><i class="fas fa-user"></i></a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="cover_img">
-            <img src="images/tesla-phone.png" alt="first image">
+    <header>
+        <ul>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Tesla</a></li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <!-- <h2>Photode couverture du site</h2> -->
+            <img src="images/tesla-phone.png" alt="couverture de mon site" title="Tesla Pi model">
         </section>
         <section>
-            <h1>About Pi Phone</h1>
-            <div class="description">
-                <p class="about_phone"> <span>Tesla Pi Phone : Caractéristiques </span><br>
-                    <br>Découvrez le Tesla Pi Phone, un smartphone au design futuriste et épuré. <br> Il offre un
-                    appareil photo
-                    avancé, des performances haut de gamme <br>avec un processeur de dernière génération, et une
-                    autonomie
-                    impressionnante <br>grâce à une batterie à recharge rapide. Connecté en 5G,il propose des
-                    fonctionnalités <br>
-                    de santé intégrées et une expérience utilisateur unique sur une version personnalisée <br>d'Android.
-                    Fabriqué avec des matériaux recyclés, il incarne l'engagement de Tesla <br> pour la durabilité.
-                </p>
-            </div>
-            <div class="img_button">
-                <img src="images/render04-removebg-preview.png" alt="model pi" title="model Pi">
-                <button>Discover our phone</button>
-            </div>
-            <section class="comments-section">
-                <!-- Titre des commentaires -->
-                <h3 class="comments">What Our Users Say</h3>
-
-                <!-- Profils des utilisateurs et leurs commentaires -->
-                <div class="user_profiles">
-                    <div class="user_profile">
-                        <div class="profil">
-                            <i class="fas fa-user-circle user-icon"></i>
-                            <h3 class="user_name">Alice Dupont, Photographer</h3>
-                        </div>
-                        <p class="user_comment">"The Tesla Pi Phone is incredible! I love its features."<br>Rating:
-                            ★★★★★</p>
-                    </div>
-
-                    <div class="user_profile">
-                        <div class="profil">
-                            <i class="fas fa-user-circle user-icon"></i>
-                            <h3 class="user_name">Marc Lorel, Developer</h3>
-                        </div>
-                        <p class="user_comment">"A fascinating device with cutting-edge technology."<br>Rating: ★★★★★
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Champ pour ajouter un commentaire -->
-                <div class="comment_section">
-                    <h3 class="input_comments">What Do You Think About the Pi Phone?</h3>
-                    <div class="comment_input">
-                        <form id="commentForm">
-                            <textarea name="user_comment" id="user_comment" required placeholder="Your comment"
-                                rows="5"></textarea>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <hr class="line">
-                <ul class="footer-list">
-                    <li>Tela &copy; 2024</li>
-                    <li>Privacy & Legal</li>
-                    <li>Shop</li>
-                    <li>News</li>
-                    <li>Get Updates</li>
-                    <li>Location</li>
-                </ul>
-                <ul class="footer-icon">
-                    <li><i class="far fa-envelope fa-2x"></i></li>
-                    <li><i class="fab fa-linkedin-in fa-2x"></i></li>
-                    <li><i class="fab fa-instagram fa-2x"></i></li>
-                    <li><i class="fab fa-facebook-f fa-2x"></i></li>
-                    
-                </ul>                
-            </footer>
-    </div>
+            <!-- <h2>Information du Tesla Pi model</h2> -->
+            <h1>About Pi phone</h1>
+            <p>Tesla Pi Phone : Caractéristiques
+                Découvrez le Tesla Pi Phone, un smartphone au design futuriste et épuré. Il offre un appareil photo
+                avancé, des performances haut de gamme avec un processeur de dernière génération, et une autonomie
+                impressionnante grâce à une batterie à recharge rapide. Connecté en 5G, il propose des fonctionnalités
+                de santé intégrées et une expérience utilisateur unique sur une version personnalisée d'Android.
+                Fabriqué avec des matériaux recyclés, il incarne l'engagement de Tesla pour la durabilité.</p>
+            <img src="images/render04-removebg-preview.png" alt="Information sur le Pi model"
+                title="Tesla model Pi info" id="model_pi">
+            <button>Descover our phone</button>
+        </section>
+        <section>
+            <!-- <h2>Avis des utilisateurs</h2> -->
+            <h1>“What our users say”</h1>
+            <i class="fas fa-user-circle user-icon"></i>
+            <h3>Alice Dupont, Photographe</h3>
+            <p>Ce téléphone a complètement changé ma façon de vivre ! <br>
+                note : ★★★★★</p>
+            <i class="fas fa-user-circle user-icon"></i>
+            <h3>Marc Leroy, Développeur</h3>
+            <p>Je n'ai jamais eu un appareil aussi performant ! <br>
+                note : ★★★★★</p>
+            <!-- Champ de commentaire des utilisateurs -->
+            <h1>“What do you thing about Pi Phone”</h1>
+            <textarea name="commentaire" id="comment_area"></textarea>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <ul>
+            <li>Tesla &copy; 2024</li>
+            <li>Privaty & Legacy</li>
+            <li>Shop</li>
+            <li>News</li>
+            <li>Get Utgrade</li>
+            <li>loctaion</li>
+        </ul>
+        <ul>
+            <li><i class="far fa-envelope fa-2x"></i></li>
+            <li><i class="fab fa-linkedin-in fa-2x"></i></li>
+            <li><i class="fab fa-instagram fa-2x"></i></li>
+            <li><i class="fab fa-facebook-f fa-2x"></i></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
