@@ -31,12 +31,22 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 2em;
 }
 
 nav a:hover{
     background-color: rgba(241, 237, 231, 0.2);
     border-radius: 1em;
+}
+/* Responsivite */
+@media (max-width : 600px){
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 1em 0;
+    }
 }
 /*  =========================================  CSS du main et ses composants  ========================================= */
 
