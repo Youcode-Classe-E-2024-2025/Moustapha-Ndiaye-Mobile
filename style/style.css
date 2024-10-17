@@ -36,6 +36,7 @@ nav a {
 nav a:hover{
     background-color: rgba(241, 237, 231, 0.2);
     border-radius: 1em;
+    padding: 15px 20px; /* Padding au survol pour agrandir */
 }
 /* Responsivite */
 @media (max-width : 600px){
@@ -49,4 +50,7 @@ nav a:hover{
     }
 }
 /*  =========================================  CSS du main et ses composants  ========================================= */
-
+/* premiere section */
+.cover img {
+    width: 100%;
+}
