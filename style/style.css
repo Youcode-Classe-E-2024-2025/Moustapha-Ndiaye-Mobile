@@ -10,7 +10,6 @@
 
 /* medias queries des sections  */
 
-
 /* Les styles de bases de ma page */
 body {
   /* gestion du texte, lisibilite et densite */
@@ -113,7 +112,7 @@ button:hover {
 .comments {
   margin-left: 10%;
   color: white;
-  font-family: 'Montersat', sans-serif;
+  font-family: "Montersat", sans-serif;
   display: flex;
 }
 
@@ -146,7 +145,7 @@ button:hover {
 .input_comments {
   margin-left: 65%;
   color: white;
-  font-family: 'Montersat', sans-serif;
+  font-family: "Montersat", sans-serif;
   display: flex;
 }
 
@@ -161,7 +160,7 @@ textarea {
   margin-top: -12%;
 }
 
-/* ====================================================== Css du footer ============================================= */ 
+/* ====================================================== Css du footer ============================================= */
 
 .line {
   margin-top: 10%;
@@ -184,7 +183,7 @@ textarea {
   margin: 0 20px; /* Ajuster la marge pour moins d'espace */
   color: white;
   font-size: 16px;
-  font-family: 'Montersat', sans-serif;
+  font-family: "Montersat", sans-serif;
   margin: 0 5%;
   white-space: nowrap;
 }
@@ -202,33 +201,35 @@ textarea {
 .footer-icon li {
   margin: 0 20px; /* Ajuster la marge pour moins d'espace */
   font-size: 16px;
-  font-family: 'Montersat', sans-serif;
+  font-family: "Montersat", sans-serif;
   background-color: white;
   margin: 0 100px;
 }
 
+
+
+/* =============================================== Responsivite mobile ==================================== */
 /* Styles responsives */
-@media (max-width: 768px) {
+@media (max-width: 601px) {
   .line {
     width: 80%; /* Ajuster la largeur sur les petits écrans */
   }
 
-  .footer-list, 
+  .footer-list,
   .footer-icon {
     flex-direction: column; /* Aligner les éléments en colonne */
     align-items: center; /* Centrer les éléments */
   }
 
-  .footer-list li, 
+  .footer-list li,
   .footer-icon li {
     margin: 10px 0; /* Marge verticale pour espacement */
   }
 }
 
-/* =============================================== Responsivite ==================================== */
 /* Header */
-@media (max-width: 600px) {
-  nav ul  {
+@media (max-width: 601px) {
+  nav ul {
     flex-direction: column;
     align-items: center;
   }
@@ -239,19 +240,120 @@ textarea {
 }
 
 /* Footer responsives */
-@media (max-width: 600px) {
+@media (max-width: 601px) {
   footer {
-      display: flex;
-      flex-direction: column; /* Alignement en colonne */
-      align-items: center; /* Centrer les éléments */
+    display: flex;
+    flex-direction: column; /* Alignement en colonne */
+    align-items: center; /* Centrer les éléments */
   }
 
   .footer-list li,
   .footer-icon li {
-      display: block; /* Les éléments passent à la ligne */
-      margin: 5px 0; /* Marge verticale */
+    display: block; /* Les éléments passent à la ligne */
+    margin: 5px 0; /* Marge verticale */
   }
-} 
+}
 
 /* Main responsives */
+
+@media (max-width: 601px) {
+  .second_section h1 {
+    white-space: nowrap;
+    padding: 5px;
+    background: #f9b320;
+    border-radius: 100px;
+    width: 40%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 30%;
+  }
+  .title_carac {
+    justify-content: space-between;
+    color: white;
+    margin-left: 15%;
+    white-space: nowrap;
+    font-size: 20px;
+  }
+  .title_p {
+    justify-content: space-between;
+    margin-left: 15%;
+    color: white;
+    font-family: "Montersat", sans-serif;
+    font-size: 15px;
+  }
+  .second_section img {
+    width: 10em;
+    margin-left: 30%;
+    margin-top: 10%;
+
+  }
+  button {
+    padding: 5px;
+    white-space: nowrap;
+    background: #f9b320;
+    border-radius: 100px;
+    width: 25%;
+    margin-top: 2%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 35%;
+    color: white;
+    border: none;
+  }
+  /* ======================== Commentaire des utilisateurs ======================= */
+.comments {
+  margin-left: 10%;
+  color: white;
+  font-family: "Montersat", sans-serif;
+  display: flex;
+  margin-top:3% ;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 8%;
+}
+
+.user-icon {
+  font-size: 2em;
+  color: #515b67;
+}
+
+.user_name {
+  margin-left: 5px;
+  color: rgb(168, 165, 165);
+  font-family: serif;
+  margin-top: 1px;
+}
+
+.user_comment {
+  margin-left: 10%;
+  margin-top: 0;
+  color: #c2c8ce;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_comments {
+  margin-left: 8%;
+  color: white;
+  font-family: "Montersat", sans-serif;
+  display: flex;
+  margin-top: 20%;
+}
+
+textarea {
+  width: 70%;
+  margin-left: 8%;
+  /* border-radius: 10px; */
+  height: 15vh;
+}
+
+.comment_section {
+  margin-top: -12%;
+} 
+}
+
 
