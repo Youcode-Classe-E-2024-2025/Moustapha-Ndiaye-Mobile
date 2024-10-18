@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+/* medias queries des sections  */
+
+
 /* Les styles de bases de ma page */
 body {
   /* gestion du texte, lisibilite et densite */
@@ -42,17 +45,7 @@ nav a:hover {
   border-radius: 1em;
   padding: 15px 20px; /* Padding au survol pour agrandir */
 }
-/* Responsivite */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  nav ul li {
-    margin: 1em 0;
-  }
-}
 /*  =========================================  CSS du main et ses composants  ========================================= */
 /* premiere section */
 .cover img {
@@ -158,12 +151,107 @@ button:hover {
 }
 
 textarea {
-  width: 310px;
+  width: 20%;
   margin-left: 67%;
   /* border-radius: 10px; */
-  height: auto;
+  height: 12vh;
 }
 
 .comment_section {
   margin-top: -12%;
 }
+
+/* ====================================================== Css du footer ============================================= */ 
+
+.line {
+  margin-top: 10%;
+  width: 70%;
+  color: #ab4282;
+  margin-left: auto; /* Centrer avec auto */
+  margin-right: auto; /* Centrer avec auto */
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 3%;
+  justify-content: center; /* Centrer horizontalement */
+}
+
+.footer-list li {
+  margin: 0 20px; /* Ajuster la marge pour moins d'espace */
+  color: white;
+  font-size: 16px;
+  font-family: 'Montersat', sans-serif;
+  margin: 0 5%;
+  white-space: nowrap;
+}
+
+.footer-icon {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 3%;
+  justify-content: center; /* Centrer horizontalement */
+  margin-bottom: 1%;
+}
+
+.footer-icon li {
+  margin: 0 20px; /* Ajuster la marge pour moins d'espace */
+  font-size: 16px;
+  font-family: 'Montersat', sans-serif;
+  background-color: white;
+  margin: 0 100px;
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+  .line {
+    width: 80%; /* Ajuster la largeur sur les petits écrans */
+  }
+
+  .footer-list, 
+  .footer-icon {
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: center; /* Centrer les éléments */
+  }
+
+  .footer-list li, 
+  .footer-icon li {
+    margin: 10px 0; /* Marge verticale pour espacement */
+  }
+}
+
+/* =============================================== Responsivite ==================================== */
+/* Header */
+@media (max-width: 600px) {
+  nav ul  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+  }
+}
+
+/* Footer responsives */
+@media (max-width: 600px) {
+  footer {
+      display: flex;
+      flex-direction: column; /* Alignement en colonne */
+      align-items: center; /* Centrer les éléments */
+  }
+
+  .footer-list li,
+  .footer-icon li {
+      display: block; /* Les éléments passent à la ligne */
+      margin: 5px 0; /* Marge verticale */
+  }
+} 
+
+/* Main responsives */
+
