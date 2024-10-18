@@ -18,46 +18,82 @@
 
 <body>
     <header>
-        <ul>
-            <li><a href="#"><i class="fas fa-search"></i></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Tesla</a></li>
-            <li><a href="#"><i class="fas fa-user"></i></a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Tesla</a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
+        <section class="first_section">
             <!-- <h2>Photode couverture du site</h2> -->
-            <img src="images/tesla-phone.png" alt="couverture de mon site" title="Tesla Pi model">
+            <div class="cover">
+                <img src="images/tesla-phone.png" alt="couverture de mon site" title="Tesla Pi model">
+            </div>
         </section>
-        <section>
+        <section class="second_section">
             <!-- <h2>Information du Tesla Pi model</h2> -->
-            <h1>About Pi phone</h1>
-            <p>Tesla Pi Phone : Caractéristiques
-                Découvrez le Tesla Pi Phone, un smartphone au design futuriste et épuré. Il offre un appareil photo
-                avancé, des performances haut de gamme avec un processeur de dernière génération, et une autonomie
-                impressionnante grâce à une batterie à recharge rapide. Connecté en 5G, il propose des fonctionnalités
-                de santé intégrées et une expérience utilisateur unique sur une version personnalisée d'Android.
-                Fabriqué avec des matériaux recyclés, il incarne l'engagement de Tesla pour la durabilité.</p>
-            <img src="images/render04-removebg-preview.png" alt="Information sur le Pi model"
-                title="Tesla model Pi info" id="model_pi">
-            <button>Descover our phone</button>
+            <h1 class="title_desc">About Pi phone</h1>
+            <br>
+            <br>
+            <br>
+            <h3 class="title_carac">Tesla Pi Phone : Caractéristiques </h3>
+            <p class="title_p">
+                Découvrez le Tesla Pi Phone, un smartphone au design futuriste et épuré. <br> Il offre un
+                appareil photo
+                avancé, des performances haut de gamme <br>avec un processeur de dernière génération, et une
+                autonomie
+                impressionnante <br>grâce à une batterie à recharge rapide. Connecté en 5G,il propose des
+                fonctionnalités <br>
+                de santé intégrées et une expérience utilisateur unique sur une version personnalisée <br>d'Android.
+                Fabriqué avec des matériaux recyclés, il incarne l'engagement de Tesla <br> pour la durabilité.
+            </p>
+            <div class="button_phone">
+                <img src="images/render04-removebg-preview.png" alt="Information sur le Pi model"
+                    title="Tesla model Pi info" id="model_pi">
+                <button>Descover our phone</button>
+            </div>
         </section>
-        <section>
+        <section class="third_section">
             <!-- <h2>Avis des utilisateurs</h2> -->
-            <h1>“What our users say”</h1>
-            <i class="fas fa-user-circle user-icon"></i>
-            <h3>Alice Dupont, Photographe</h3>
-            <p>Ce téléphone a complètement changé ma façon de vivre ! <br>
-                note : ★★★★★</p>
-            <i class="fas fa-user-circle user-icon"></i>
-            <h3>Marc Leroy, Développeur</h3>
-            <p>Je n'ai jamais eu un appareil aussi performant ! <br>
-                note : ★★★★★</p>
+            <!-- Titre des commentaires -->
+                <h3 class="comments">“What our users say”</h3>
+
+                <!-- Profils des utilisateurs et leurs commentaires -->
+                <div class="user_profiles">
+                    <div class="user_profile">
+                        <div class="profil">
+                            <i class="fas fa-user-circle user-icon"></i>
+                            <h3 class="user_name">Alice Dupont, Photographer</h3>
+                        </div>
+                        <p class="user_comment">"The Tesla Pi Phone is incredible! I love its features."<br>Rating:
+                            ★★★★★</p>
+                    </div>
+                    <br>
+                    <div class="user_profile">
+                        <div class="profil">
+                            <i class="fas fa-user-circle user-icon"></i>
+                            <h3 class="user_name">Marc Lorel, Developer</h3>
+                        </div>
+                        <p class="user_comment">"A fascinating device with cutting-edge technology."<br>Rating: ★★★★★
+                        </p>
+                    </div>
+                </div>
             <!-- Champ de commentaire des utilisateurs -->
-            <h1>“What do you thing about Pi Phone”</h1>
-            <textarea name="commentaire" id="comment_area"></textarea>
+            <!-- Champ pour ajouter un commentaire -->
+            <div class="comment_section">
+                <h3 class="input_comments">“What do you thing about Pi Phone”</h3>
+                <div class="comment_input">
+                    <form id="commentForm">
+                        <textarea name="user_comment" id="user_comment" required placeholder="Your comment"
+                            rows="5"></textarea>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

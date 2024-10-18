@@ -1,56 +1,169 @@
 /* initialisation de la page pour tout les elements*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
+
 /* Les styles de bases de ma page */
 body {
-    /* gestion du texte, lisibilite et densite */
-    line-height: 1.6;
-    background: linear-gradient(180deg, #191970, #431F4B);
+  /* gestion du texte, lisibilite et densite */
+  line-height: 1.6;
+  background: linear-gradient(180deg, #191970, #431f4b);
 }
 /* CSS du header et ses composants */
-header{
-    background-color: black;
-    /* Cette propriete gere l'espace autour */
-    padding: 2em 2em;
+header {
+  background-color: black;
+  /* Cette propriete gere l'espace autour */
+  padding: 2em 2em;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul li {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-nav a:hover{
-    background-color: rgba(241, 237, 231, 0.2);
-    border-radius: 1em;
-    padding: 15px 20px; /* Padding au survol pour agrandir */
+nav a:hover {
+  background-color: rgba(241, 237, 231, 0.2);
+  border-radius: 1em;
+  padding: 15px 20px; /* Padding au survol pour agrandir */
 }
 /* Responsivite */
-@media (max-width : 600px){
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul li {
-        margin: 1em 0;
-    }
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+  }
 }
 /*  =========================================  CSS du main et ses composants  ========================================= */
 /* premiere section */
 .cover img {
-    width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.second_section h1 {
+  padding: 10px;
+  background: #f9b320;
+  border-radius: 100px;
+  width: 25%;
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.title_desc {
+  padding: 2em 2em;
+  justify-content: space-between;
+  color: white;
+  margin-left: 12%;
+}
+
+.title_carac {
+  justify-content: space-between;
+  color: white;
+  margin-left: 8.5em;
+}
+
+.title_p {
+  justify-content: space-between;
+  margin-left: 8em;
+  color: white;
+  font-family: "Montersat", sans-serif;
+  font-size: 20px;
+}
+
+.second_section img {
+  width: 25em;
+}
+
+button {
+  padding: 10px;
+  background: #f9b320;
+  border-radius: 100px;
+  width: 10%;
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 79%;
+  color: white;
+  border: none;
+}
+button:hover {
+  color: black;
+}
+
+.second_section img {
+  margin-left: 70%;
+  margin-top: -21em;
+}
+
+/* ======================== Commentaire des utilisateurs ======================= */
+.comments {
+  margin-left: 10%;
+  color: white;
+  font-family: 'Montersat', sans-serif;
+  display: flex;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 8%;
+}
+
+.user-icon {
+  font-size: 2em;
+  color: #515b67;
+}
+
+.user_name {
+  margin-left: 5px;
+  color: rgb(168, 165, 165);
+  font-family: serif;
+  margin-top: 1px;
+}
+
+.user_comment {
+  margin-left: 10%;
+  margin-top: 0;
+  color: #c2c8ce;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_comments {
+  margin-left: 65%;
+  color: white;
+  font-family: 'Montersat', sans-serif;
+  display: flex;
+}
+
+textarea {
+  width: 310px;
+  margin-left: 67%;
+  /* border-radius: 10px; */
+  height: auto;
+}
+
+.comment_section {
+  margin-top: -12%;
 }
